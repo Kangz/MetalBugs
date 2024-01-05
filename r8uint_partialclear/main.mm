@@ -31,7 +31,7 @@ int main() {
     auto texture = [device newTextureWithDescriptor:desc];
 
     // Create the readback buffer.
-    auto buffer = [device newBufferWithLength:256*15 + 16 options:MTLResourceStorageModeShared];
+    auto buffer = [device newBufferWithLength:256*16 options:MTLResourceStorageModeShared];
 
     // Clear the texture using a render pass.
     auto rpDesc = [MTLRenderPassDescriptor renderPassDescriptor];
